@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[context]
+  # Prevent Netlify from auto-detecting an SSR framework output directory
+  # which can set the publish directory to `dist/client`.
+  # This file ensures the static Vite build output (`dist`) is used.
